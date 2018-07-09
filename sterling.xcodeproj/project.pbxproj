@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE2C3E6320FA94940093798D /* UnitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2C3E6220FA94940093798D /* UnitData.swift */; };
+		AE459CAC20F30BB300FA06F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE459CAB20F30BB300FA06F2 /* AppDelegate.swift */; };
+		AE459CB320F30BB400FA06F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE459CB220F30BB400FA06F2 /* Assets.xcassets */; };
+		AE459CE220F4521200FA06F2 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE459CDC20F4521200FA06F2 /* Nimble.framework */; };
+		AE459CE520F4521200FA06F2 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE459CDF20F4521200FA06F2 /* Quick.framework */; };
+		AE459CE720F4527300FA06F2 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE459CDE20F4521200FA06F2 /* RxSwift.framework */; };
+		AE459CEB20F45BB500FA06F2 /* LandingViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE459CEA20F45BB500FA06F2 /* LandingViewControllerTests.swift */; };
+		AE459CEE20F45C4300FA06F2 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE459CEC20F45C4300FA06F2 /* LandingViewController.swift */; };
+		AE459CEF20F45C4300FA06F2 /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE459CED20F45C4300FA06F2 /* LandingViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE459CBD20F30BB500FA06F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE459CA020F30BB300FA06F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE459CA720F30BB300FA06F2;
+			remoteInfo = sterling;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE2C3E6220FA94940093798D /* UnitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitData.swift; sourceTree = "<group>"; };
+		AE459CA820F30BB300FA06F2 /* sterling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sterling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE459CAB20F30BB300FA06F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE459CB220F30BB400FA06F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE459CB720F30BB400FA06F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE459CBC20F30BB500FA06F2 /* sterlingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sterlingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE459CC220F30BB500FA06F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE459CDA20F4521200FA06F2 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		AE459CDB20F4521200FA06F2 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		AE459CDC20F4521200FA06F2 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		AE459CDD20F4521200FA06F2 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		AE459CDE20F4521200FA06F2 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		AE459CDF20F4521200FA06F2 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		AE459CEA20F45BB500FA06F2 /* LandingViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewControllerTests.swift; sourceTree = "<group>"; };
+		AE459CEC20F45C4300FA06F2 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		AE459CED20F45C4300FA06F2 /* LandingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE459CA520F30BB300FA06F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE459CE720F4527300FA06F2 /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE459CB920F30BB500FA06F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE459CE220F4521200FA06F2 /* Nimble.framework in Frameworks */,
+				AE459CE520F4521200FA06F2 /* Quick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE459C9F20F30BB300FA06F2 = {
+			isa = PBXGroup;
+			children = (
+				AE459CAA20F30BB300FA06F2 /* sterling */,
+				AE459CBF20F30BB500FA06F2 /* sterlingTests */,
+				AE459CA920F30BB300FA06F2 /* Products */,
+				AE459CD920F4521200FA06F2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE459CA920F30BB300FA06F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE459CA820F30BB300FA06F2 /* sterling.app */,
+				AE459CBC20F30BB500FA06F2 /* sterlingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE459CAA20F30BB300FA06F2 /* sterling */ = {
+			isa = PBXGroup;
+			children = (
+				AE459CAB20F30BB300FA06F2 /* AppDelegate.swift */,
+				AE459CB220F30BB400FA06F2 /* Assets.xcassets */,
+				AE459CB720F30BB400FA06F2 /* Info.plist */,
+				AE459CEC20F45C4300FA06F2 /* LandingViewController.swift */,
+				AE459CED20F45C4300FA06F2 /* LandingViewController.xib */,
+				AE2C3E6220FA94940093798D /* UnitData.swift */,
+			);
+			path = sterling;
+			sourceTree = "<group>";
+		};
+		AE459CBF20F30BB500FA06F2 /* sterlingTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE459CC220F30BB500FA06F2 /* Info.plist */,
+				AE459CEA20F45BB500FA06F2 /* LandingViewControllerTests.swift */,
+			);
+			path = sterlingTests;
+			sourceTree = "<group>";
+		};
+		AE459CD920F4521200FA06F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE459CDC20F4521200FA06F2 /* Nimble.framework */,
+				AE459CDF20F4521200FA06F2 /* Quick.framework */,
+				AE459CDD20F4521200FA06F2 /* RxBlocking.framework */,
+				AE459CDB20F4521200FA06F2 /* RxCocoa.framework */,
+				AE459CDE20F4521200FA06F2 /* RxSwift.framework */,
+				AE459CDA20F4521200FA06F2 /* RxTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE459CA720F30BB300FA06F2 /* sterling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE459CD020F30BB500FA06F2 /* Build configuration list for PBXNativeTarget "sterling" */;
+			buildPhases = (
+				AE459CA420F30BB300FA06F2 /* Sources */,
+				AE459CA520F30BB300FA06F2 /* Frameworks */,
+				AE459CA620F30BB300FA06F2 /* Resources */,
+				AE459CE920F452E600FA06F2 /* Carthage Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sterling;
+			productName = sterling;
+			productReference = AE459CA820F30BB300FA06F2 /* sterling.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE459CBB20F30BB500FA06F2 /* sterlingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE459CD320F30BB500FA06F2 /* Build configuration list for PBXNativeTarget "sterlingTests" */;
+			buildPhases = (
+				AE459CB820F30BB500FA06F2 /* Sources */,
+				AE459CB920F30BB500FA06F2 /* Frameworks */,
+				AE459CBA20F30BB500FA06F2 /* Resources */,
+				AE459CE820F452B000FA06F2 /* Carthage Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE459CBE20F30BB500FA06F2 /* PBXTargetDependency */,
+			);
+			name = sterlingTests;
+			productName = sterlingTests;
+			productReference = AE459CBC20F30BB500FA06F2 /* sterlingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE459CA020F30BB300FA06F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = khng;
+				TargetAttributes = {
+					AE459CA720F30BB300FA06F2 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					AE459CBB20F30BB500FA06F2 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+						TestTargetID = AE459CA720F30BB300FA06F2;
+					};
+				};
+			};
+			buildConfigurationList = AE459CA320F30BB300FA06F2 /* Build configuration list for PBXProject "sterling" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE459C9F20F30BB300FA06F2;
+			productRefGroup = AE459CA920F30BB300FA06F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE459CA720F30BB300FA06F2 /* sterling */,
+				AE459CBB20F30BB500FA06F2 /* sterlingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE459CA620F30BB300FA06F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE459CEF20F45C4300FA06F2 /* LandingViewController.xib in Resources */,
+				AE459CB320F30BB400FA06F2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE459CBA20F30BB500FA06F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE459CE820F452B000FA06F2 /* Carthage Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			name = "Carthage Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		AE459CE920F452E600FA06F2 /* Carthage Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			name = "Carthage Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE459CA420F30BB300FA06F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE459CEE20F45C4300FA06F2 /* LandingViewController.swift in Sources */,
+				AE459CAC20F30BB300FA06F2 /* AppDelegate.swift in Sources */,
+				AE2C3E6320FA94940093798D /* UnitData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE459CB820F30BB500FA06F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE459CEB20F45BB500FA06F2 /* LandingViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE459CBE20F30BB500FA06F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE459CA720F30BB300FA06F2 /* sterling */;
+			targetProxy = AE459CBD20F30BB500FA06F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AE459CCE20F30BB500FA06F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE459CCF20F30BB500FA06F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE459CD120F30BB500FA06F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = sterling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.khng.sterling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE459CD220F30BB500FA06F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = sterling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.khng.sterling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE459CD420F30BB500FA06F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = sterlingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.khng.sterlingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sterling.app/sterling";
+			};
+			name = Debug;
+		};
+		AE459CD520F30BB500FA06F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = sterlingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.khng.sterlingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sterling.app/sterling";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE459CA320F30BB300FA06F2 /* Build configuration list for PBXProject "sterling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE459CCE20F30BB500FA06F2 /* Debug */,
+				AE459CCF20F30BB500FA06F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE459CD020F30BB500FA06F2 /* Build configuration list for PBXNativeTarget "sterling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE459CD120F30BB500FA06F2 /* Debug */,
+				AE459CD220F30BB500FA06F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE459CD320F30BB500FA06F2 /* Build configuration list for PBXNativeTarget "sterlingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE459CD420F30BB500FA06F2 /* Debug */,
+				AE459CD520F30BB500FA06F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE459CA020F30BB300FA06F2 /* Project object */;
+}
