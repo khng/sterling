@@ -17,6 +17,7 @@
 		AE459CEE20F45C4300FA06F2 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE459CEC20F45C4300FA06F2 /* LandingViewController.swift */; };
 		AE459CEF20F45C4300FA06F2 /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE459CED20F45C4300FA06F2 /* LandingViewController.xib */; };
 		AE8FA3EE210A4CF000C46249 /* UnitDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8FA3ED210A4CF000C46249 /* UnitDataTests.swift */; };
+		AE8FA3F0210A5E6300C46249 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8FA3EF210A5E6300C46249 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		AE459CEC20F45C4300FA06F2 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		AE459CED20F45C4300FA06F2 /* LandingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingViewController.xib; sourceTree = "<group>"; };
 		AE8FA3ED210A4CF000C46249 /* UnitDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitDataTests.swift; sourceTree = "<group>"; };
+		AE8FA3EF210A5E6300C46249 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				AE459CEC20F45C4300FA06F2 /* LandingViewController.swift */,
 				AE459CED20F45C4300FA06F2 /* LandingViewController.xib */,
 				AE2C3E6220FA94940093798D /* UnitData.swift */,
+				AE8FA3EF210A5E6300C46249 /* NetworkService.swift */,
 			);
 			path = sterling;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				AE459CEE20F45C4300FA06F2 /* LandingViewController.swift in Sources */,
 				AE459CAC20F30BB300FA06F2 /* AppDelegate.swift in Sources */,
+				AE8FA3F0210A5E6300C46249 /* NetworkService.swift in Sources */,
 				AE2C3E6320FA94940093798D /* UnitData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

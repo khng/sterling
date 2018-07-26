@@ -15,8 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let networkService = NetworkService()
+        let landingViewController = LandingViewController(nibName: nil, bundle: .main)
+        landingViewController.configure(networkService: networkService)
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = LandingViewController()
+        window?.rootViewController = landingViewController
         window?.makeKeyAndVisible()
         return true
     }
