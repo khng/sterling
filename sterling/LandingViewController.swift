@@ -10,6 +10,9 @@ import UIKit
 
 class LandingViewController: UIViewController {
     
+    @IBOutlet weak var dataLabel: UILabel!
+    @IBOutlet weak var activitySpinner: UIActivityIndicatorView!
+    
     var networkService: NetworkServiceProtocol!
     
     func configure(networkService: NetworkServiceProtocol) {
@@ -18,7 +21,13 @@ class LandingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        networkService.fetchData()
+        activitySpinner.hidesWhenStopped = true
+        activitySpinner.startAnimating()
+        networkService.fetchData { (unitDataDictionary) in
+            print(unitDataDictionary)
+            self.activitySpinner.stopAnimating()
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {

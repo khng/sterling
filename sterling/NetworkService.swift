@@ -9,13 +9,16 @@
 import Foundation
 
 protocol NetworkServiceProtocol {
-    func fetchData()
+    func fetchData(instruction: @escaping ([Date : UnitData])->()) // take in request and return a completion handler
 }
 
 class NetworkService: NetworkServiceProtocol {
     var unitDataDictionary: [Date : UnitData] = [:]
 
-    func fetchData() {
+    func fetchData(instruction: @escaping ([Date : UnitData]) -> ()) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy'-'MM'-'dd"
+        
         var apiUrl: URL!
         apiUrl = getUrlWith()
    
@@ -24,13 +27,13 @@ class NetworkService: NetworkServiceProtocol {
         
         URLSession.shared.dataTask(with: request) { data, _, error in
             guard let data = data, error == nil else {
-                print(error ?? "Did not receive data")
+                print("Data returned nil")
                 return
             }
             
             do {
                 guard let results = try JSONSerialization.jsonObject(with: data) as? [String:Any] else {
-                    print("Invalid JSON structure")
+                    print("Unexpected JSON structure")
                     return
                 }
                 
@@ -48,8 +51,6 @@ class NetworkService: NetworkServiceProtocol {
                     
                     let unitData = try UnitData(from: dayData)
                     
-                    let dateFormatter = DateFormatter()
-                    dateFormatter.dateFormat = "yyyy'-'MM'-'dd"
                     let date = dateFormatter.date(from: resultKey)
                     self.unitDataDictionary[date!] = unitData
                 }
@@ -57,7 +58,11 @@ class NetworkService: NetworkServiceProtocol {
                 print("Could not parse JSON")
                 return
             }
+            DispatchQueue.main.async {
+                instruction(self.unitDataDictionary)
+            }
         }.resume()
+        
     }
     
     func getUrlWith(symbol: String = "MSFT") -> URL {
